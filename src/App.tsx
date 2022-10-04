@@ -3,6 +3,7 @@ import { Button } from "./components/Button";
 import { Content } from "./components/Content";
 import { FavTeamInput } from "./components/FavTeamInput";
 import { Greet } from "./components/Greet";
+import { MvpPlayers } from "./components/MvpPlayers";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { PlayerOfMonth } from "./components/PlayerOfMonth";
@@ -34,7 +35,15 @@ function App() {
 					console.log("button was clicked", event, id)
 				}
 			/>
-			<FavTeamInput  />
+			<FavTeamInput />
+			<MvpPlayers
+				styles={{
+					border: "1px solid red",
+					padding: "1rem",
+					backgroundColor: "orange",
+					color: "blue",
+				}}
+			/>
 		</div>
 	);
 }

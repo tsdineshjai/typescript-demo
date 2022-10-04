@@ -1,6 +1,4 @@
-type StatusProps = {
-	status: "loading" | "success" | "error";
-};
+import { StatusProps } from "./Person.types";
 export const Status = (props: StatusProps) => {
 	let message;
 	if (props.status === "loading") {
